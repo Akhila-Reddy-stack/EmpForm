@@ -1,1 +1,73 @@
+body {
+    font-family: "Cabin", sans-serif;
+}
+
+.l-row {
+    margin-right: 3rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.invalid-field {
+    color: red;
+}
+
+.login {
+    background-size: cover;
+    padding: 13.45rem 12rem;
+    overflow: hidden;
+}
+.empform {
+    margin-top: 1rem;
+    width: 46%;
+    margin: 1rem 21rem;
+    border-radius: 22px;
+    box-shadow: 0 0 4px #00000052;
+    background-color: white;
+}
+
+.emp-header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #07509d;
+    padding-top: 1rem;
+}
+.form-control {
+    // width: 60%!important;
+    border-radius: 2rem !important;
+}
+.form-group {
+    margin-left: 5rem;
+    width: 52%;
+}
+.hintparagraph {
+    margin-left: 5rem;
+    color: #07509d;
+    font-weight: 700;
+}
+
+.wrapper {
+    background-color: azure;
+}
+.css-yk16xz-control {
+    border-radius: 2rem !important;
+    // width: 61%;
+}
+.onsubmit-btn {
+    border: 2px solid #07509d;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 25rem;
+    background-color: #07509d;
+}
+.onsubmit-btn :hover {
+    border: 2px solid #07509d;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 25rem;
+    background-color: #07509d;
+}
+
 
