@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import './styles/emp.scss'
+import './styles/table.scss'
 
 import {
   BrowserRouter as Router,
@@ -9,6 +10,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import EmpForm from "./Pages/EmpForm";
+import EmployeeList from "./Pages/EmpList";
 
 
 function App(props) {
@@ -18,7 +20,7 @@ function App(props) {
         <div className="wrapper" style={{ width: "100%" }}>
           <Switch>
             <Route path="/registration" component={EmpForm} />
-         
+            <Route path="/empList" component={EmployeeList} />
             <Redirect to="/registration" component={EmpForm}></Redirect>
           </Switch>
         </div>
