@@ -7,7 +7,7 @@ import React, { Fragment, PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, FormGroup } from 'reactstrap';
 import { Col, Container, Row } from 'reactstrap';
-import { Empregistration } from '../Services/Empservice.js'
+import { Empregistration } from '../Services/Empservice'
 import { CustomSelect } from '../Components/Forms/custom-select'
 
 const options = {
