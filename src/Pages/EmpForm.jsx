@@ -53,7 +53,13 @@ class EmpForm extends PureComponent {
     }
     handleType = async(e) => {
         console.log(e)
-        await this.setState({ gender: e.value })
+        if(e.value === "M"){
+            await this.setState({ gender: "Male" }) 
+        }
+        if(e.value === "F"){
+            await this.setState({ gender: "Female" }) 
+        }
+   
         console.log(this.state.value)
     }
     onSubmit = async () => {
@@ -62,9 +68,9 @@ class EmpForm extends PureComponent {
         data["EmpName"] = data.EmpName
         data["Age"] = data.Age
         data["Gender"] = gender
-        data["Phone"] = data.Phone
+        data["MobileNumber"] = data.MobileNumber
         console.log(data)
-        if (data.EmpName && data.Age && gender && data.Phone) {
+        if (data.EmpName && data.Age && gender && data.MobileNumber) {
             const res = await Empregistration(data);
             console.log(res)
             if (res.data.status === true) {
@@ -79,7 +85,7 @@ class EmpForm extends PureComponent {
             })
             setTimeout(`location.href = '/registration';`);
         }
-        else if (!data.EmpName && !data.Age && !gender && !data.Phone) {
+        else if (!data.EmpName && !data.Age && !gender && !data.MobileNumber) {
             this.props.enqueueSnackbar("Please Fill all details!!", Eoptions, 500);
         }
 
@@ -115,7 +121,7 @@ class EmpForm extends PureComponent {
                                         required
                                     />
 
-                                    <Input field="Phone" type="number" label="Phone"
+                                    <Input field="MobileNumber" type="number" label="Mobile number"
                                         onChange={this.handleChange}
                                     />
                                     <div> <Button type="submit" className="onsubmit-btn" value="Submit"  >
