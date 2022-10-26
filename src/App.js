@@ -12,7 +12,6 @@ import {
 import EmpForm from "./Pages/EmpForm";
 import EmployeeList from "./Pages/EmpList";
 
-
 function App(props) {
   return (
     <Router>
