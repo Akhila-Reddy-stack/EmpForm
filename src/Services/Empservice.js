@@ -7,6 +7,9 @@ export function Empregistration(data) {
     return http.post(`${apiEndPoint}`, data);
 }
 
+
+
+
 export const EmpList = () => {
     const apiEndPoint = `${apiUrl}/empList`;
     console.log(apiEndPoint)
