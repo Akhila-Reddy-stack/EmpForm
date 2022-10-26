@@ -10,6 +10,5 @@ export function Empregistration(data) {
 export const EmpList = () => {
     const apiEndPoint = `${apiUrl}/empList`;
     console.log(apiEndPoint)
-    
     return http.get(`${apiEndPoint}`);
   }
